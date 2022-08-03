@@ -1,0 +1,80 @@
+:root{
+    --vermelho-vinho: #8E2424;
+    --preto:#101828;
+    --cinza-forte:#3A404E;
+    --cinza-fraco:#667085;
+    --branco:#FFFFFF;
+}
+
+
+
+
+
+body{
+    background-color: var(--branco);
+    font-family: 'Inter', sans-serif;
+}
+.container{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-areas:
+    'logo lista botoes';
+    padding: .5rem;
+
+}
+.logo{
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.logo__img{
+    width: 148px;
+    filter:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.menu{
+    padding-left: 3rem;
+    align-self: center;
+    filter:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.menu__lista{
+    grid-area: lista;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px; 
+}
+.lista__link{
+    text-decoration: none;
+    color: var(--cinza-fraco);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    font-style: normal;
+}
+.menu__botoes{
+    grid-area: botoes;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.btn{
+    font-size: 16px;
+    font-style: normal;
+    border: none;
+    background-color: inherit;
+    color: var(--cinza-fraco);
+    line-height: 24px;
+    font-weight: 500;
+    
+}
+
+.menu__botoes-2{
+    border-radius: 8px;
+    background-color: var(--vermelho-vinho);
+    color: var(--branco);
+    padding: 10px 16px;
+    border: 1px solid var(--vermelho-vinho);
+}
