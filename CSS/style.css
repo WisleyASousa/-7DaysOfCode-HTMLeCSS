@@ -1,5 +1,5 @@
 :root{
-    --vermelho-vinho: #8E2424;
+    --vermelho-vinho: #8e2424;
     --preto:#101828;
     --cinza-forte:#3A404E;
     --cinza-fraco:#667085;
@@ -141,4 +141,43 @@ body{
     font-size: 14px;
     color: var(--cinza-fraco);
     
+}
+/* -- Vagas - Cabeçalho --  */
+
+.box{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap : .6rem;
+}
+.box--texto-1{
+    margin-top: 5rem;
+    font-weight: 500;
+    font-size: 14px;
+    color:var(--vermelho-vinho);
+    mix-blend-mode: multiply;
+    border: 1px solid var(--vermelho-vinho);
+    border-radius: 25px;
+    padding: .6rem;
+    background-color: rgba(142, 36, 36, 0.06);
+    border:none;
+}
+.box--texto-2{
+    font-weight: 600;
+    font-size: 36px;
+    color: var(--preto);
+}
+.box--texto-3{
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--cinza-fraco);
+}
+.box--imagem{
+    background-image: url('/img/time.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    Width: 85%;
+    Height: 280px;
+    margin-top: 1rem;
 }
