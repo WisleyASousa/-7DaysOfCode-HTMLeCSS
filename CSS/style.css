@@ -176,7 +176,7 @@ body{
     color: var(--cinza-fraco);
 }
 .box--imagem{
-    background-image: url('/img/time.png');
+    background-image: url("../img/time.png");
     background-repeat: no-repeat;
     background-size: cover;
     Width: 85%;
